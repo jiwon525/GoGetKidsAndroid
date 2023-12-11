@@ -41,6 +41,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.sp
+import com.example.kotlin.ui.screens.GoGetKidsNavGraph
 import com.example.kotlin.ui.screens.HomeScreen
 import com.example.kotlin.ui.screens.Routes
 import com.example.kotlin.ui.screens.UserInputScreen
@@ -59,15 +60,7 @@ class MainActivity : ComponentActivity() {
 
     @Composable
     fun GoGetKidsApp() {
-        val navController = rememberNavController()
-        NavHost(navController = navController, startDestination = Routes.USER_INPUT_SCREEN) {
-            composable(Routes.USER_INPUT_SCREEN){
-                UserInputScreen()
-            }
-            composable(Routes.HOME_SCREEN){
-                HomeScreen()
-            }
-        }
+        GoGetKidsNavGraph()
     }
 }
 
