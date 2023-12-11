@@ -11,7 +11,7 @@ fun GoGetKidsNavGraph(){
 
     NavHost(navController=navController, startDestination = Routes.USER_INPUT_SCREEN){
         composable(Routes.USER_INPUT_SCREEN){
-            UserInputScreen(rememberNavController())
+            UserInputScreen(navController)
         }
         composable(Routes.HOME_SCREEN){
             HomeScreen()
