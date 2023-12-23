@@ -14,6 +14,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.kotlin.ui.TopBar
+import com.example.kotlin.ui.button2
 
 @Composable
 fun HomeScreen(){
@@ -26,6 +27,8 @@ fun HomeScreen(){
                 .fillMaxWidth()
         ){
             TopBar("Welcome!")
+            button2("Show QR Code")
+            button2("View schdeule")
         }
     }
 }
